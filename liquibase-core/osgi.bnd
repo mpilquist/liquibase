@@ -39,23 +39,16 @@ Export-Package:\
 
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Liquibase-Package: liquibase.change,\
- liquibase.changelog,\
  liquibase.database,\
- liquibase.dbdoc,\
- liquibase.diff,\
- liquibase.executor,\
- liquibase.integration,\
- liquibase.logging,\
  liquibase.parser,\
  liquibase.precondition,\
- liquibase.resource,\
  liquibase.serializer,\
- liquibase.servicelocator,\
+ liquibase.sqlgenerator,\
+ liquibase.executor,\
  liquibase.snapshot,\
- liquibase.sql
- liquibase.sqlgenerator
- liquibase.statement
- liquibase.util
- liquibase
+ liquibase.logging,\
+ liquibase.ext
 
 Main-Class: liquibase.integration.commandline.Main
+
+Bundle-Activator: liquibase.activator.LiquibaseActivator
